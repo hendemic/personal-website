@@ -11,6 +11,7 @@ export const Layout = ({ children }) => {
       <div className="content">
         { children }
       </div>
+      <footer>©2022 Mike Henderson </footer>
     </div>
   )
 }
