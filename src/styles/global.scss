@@ -99,3 +99,7 @@ p {
 a {
   color:$link-color;
 }
+
+a:hover {
+  color: $brand-accent;
+}
