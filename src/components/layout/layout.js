@@ -1,14 +1,14 @@
 import React from 'react';
 import '../../styles/global.scss';
-import './layout.module.scss';
+import *as LayoutStyle from './layout.module.scss';
 import {NavBar} from '../navbar/navbar.js';
 
 export const Layout = ({ children }) => {
 
   return (
-    <div className="layout">
+    <div className={LayoutStyle.wrapper}>
       <NavBar />
-      <div className="content">
+      <div className={LayoutStyle.main}>
         { children }
       </div>
       <footer>©2022 Mike Henderson </footer>
