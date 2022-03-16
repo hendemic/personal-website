@@ -1,0 +1,20 @@
+.listStyle {
+
+  margin-top: 100px;
+
+  li {
+    margin-left: 0px;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    left: -10px;
+    margin-right: 50px;
+    list-style-type: "\1F517    ";
+    margin-bottom: 1.5rem;
+  }
+
+  span {
+    display: inline-flex;
+    position: relative;
+  }
+}
