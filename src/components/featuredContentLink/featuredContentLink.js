@@ -8,7 +8,9 @@ import * as ContentStyles from './featuredContentLink.module.scss'
 export const FeaturedContentLink = ({ title, description, url }) => {
   return (
     <div className={ContentStyles.contentStyle}>
-        <Link to={url} className="featuredContent"><span className={ContentStyles.bold}>{title}:</span> {description}</Link>
+        <Link to={url} className="featuredContent">
+        <span className={ContentStyles.bold}>{title}</span>
+        <br /><span>{description}</span></Link>
     </div>
   )
 }
