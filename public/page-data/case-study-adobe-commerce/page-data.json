@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-contentful-case-study-slug-js",
+    "path": "/case-study-adobe-commerce/",
+    "result": {"data":{"contentfulCaseStudy":{"caseStudyTitle":"Adobe Commerce","caseStudyDescription":{"caseStudyDescription":"Full-time Sr. Researcher in Adobe Design Research & Strategy"},"caseStudyCategory":"Full-Time Employment","role":["User Research"],"caseStudyContent":{"raw":"{\"data\":{},\"content\":[{\"data\":{},\"content\":[{\"data\":{},\"marks\":[],\"value\":\"I joined Adobe full-time to bring my retail experience to Adobe’s world-class solutions powering the backstage of omnichannel retail and marketing. In my time at Adobe my work has informed priorities in AI, surfaced mental models of enterprise users to better align design with their expectations and workflows, and have done category research within key e-commerce topics.\",\"nodeType\":\"text\"}],\"nodeType\":\"paragraph\"}],\"nodeType\":\"document\"}","references":[]}}},"pageContext":{"id":"73f44ecf-e2a3-5445-a317-fd2e99d1fca5","slug":"case-study-adobe-commerce","__params":{"slug":"case-study-adobe-commerce"}}},
+    "staticQueryHashes": ["3353067709"]}

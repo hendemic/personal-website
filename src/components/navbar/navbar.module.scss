@@ -1,0 +1,20 @@
+@import '../../styles/global.scss';
+
+.navmenu {
+  float: right;
+  margin: 40px 40px;
+
+  div {
+    float: right;
+    margin-left: 30px;
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $brand-accent;
+  }
+}

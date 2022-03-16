@@ -1,0 +1,77 @@
+@import './brand.scss';
+
+
+$heading-space: 1.3rem;
+$text-line-spacing: 1.6rem;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: $bg-color;
+  color: $primary-font-color;
+  font-size: 18px;
+  font-family: $brand-font;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  float: none;
+  padding: 160px 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+
+h1,h2,h3,h4 {
+  margin-bottom: $heading-space;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+p {
+    line-height: $text-line-spacing;
+}
+
+.label {
+  font-size: .8rem;
+}
+
+.caseStudySubHeading {
+  font-size: .8rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+a {
+  color:$link-color;
+}
