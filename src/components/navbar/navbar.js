@@ -22,7 +22,7 @@ export const NavBar = ({ children }) => {
     <div className={navStyles.navmenu}>
       {result.contentfulMenuNav.menuItems.map((menuItem) =>
         <div key={menuItem.id}>
-          <Link to={menuItem.page.slug}>{menuItem.label}</Link>
+          <Link to={"../" + menuItem.page.slug}>{menuItem.label}</Link>
         </div>
       )}
     </div>
