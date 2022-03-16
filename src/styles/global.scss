@@ -35,7 +35,7 @@ h1,h2,h3,h4 {
 
 @media only screen and (max-width: 375px){
   body {font-size: 20px;}
-  h1 {font-size: 2.6rem;}
+  h1 {font-size: 3rem;}
   h2 {font-size: 2rem;}
   h3 {font-size: 1.6rem;}
   h4 {font-size: 1.2rem;}
@@ -44,8 +44,8 @@ h1,h2,h3,h4 {
 
 @media only screen and (min-width: 375px) and (max-width: 600px){
   body {font-size: 20px;}
-  h1 {font-size: 3rem;}
-  h2 {font-size: 2.2rem;}
+  h1 {font-size: 3.4rem;}
+  h2 {font-size: 2.4rem;}
   h3 {font-size: 1.8rem;}
   h4 {font-size: 1.2rem;}
   .label{font-size: .7rem;}
@@ -90,9 +90,9 @@ p {
 }
 
 .caseStudySubHeading {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   font-size: .8rem;
-  letter-spacing: .2rem;
+  letter-spacing: .4rem;
   text-transform: uppercase;
 }
 

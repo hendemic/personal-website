@@ -2,6 +2,7 @@ import React from 'react'
 import { Layout } from '../components/layout/layout.js'
 import { RichText } from '../components/richText/richText.js'
 import {graphql} from "gatsby"
+
 /* import {documentToReactComponents} from '@contentful/rich-text-react-renderer' */
 
 export default function ContentfulCaseStudy(props) {
