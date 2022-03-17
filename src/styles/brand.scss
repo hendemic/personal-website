@@ -4,7 +4,7 @@ $brand-base-1: #0b080a;
 $brand-base-2: #d5d5d5;
 $brand-base-3: #abaeaa;
 $brand-accent: #e6585a;
-$brand-accent-2: #984848;
+$brand-accent-2: #ab1b43;
 $brand-accent-3: #d0ca4f;
 
 
@@ -15,4 +15,5 @@ $brand-font: "inter", Arial, sans-serif;
 //set colors
 $bg-color: $brand-base-1;
 $link-color: $brand-base-2;
+$link-hover: $brand-accent;
 $primary-font-color: $brand-base-2;

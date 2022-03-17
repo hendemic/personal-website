@@ -1,8 +1,13 @@
+@import './brand.scss';
+
+
 .caseStudySubHeading {
   margin-bottom: .8rem;
   font-size: .8rem;
   letter-spacing: .2rem;
   text-transform: uppercase;
+  font-weight: 700;
+  color: $brand-accent-2;
 }
 
 
