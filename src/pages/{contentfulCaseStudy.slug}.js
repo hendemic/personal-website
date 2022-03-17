@@ -2,7 +2,7 @@ import React from 'react'
 import { Layout } from '../components/layout/layout.js'
 import { RichText } from '../components/richText/richText.js'
 import {graphql} from "gatsby"
-import * as Styles from '../styles/caseStudyPage.module.scss'
+import * as Styles from '../styles/contentPage.module.scss'
 
 
 /* import {documentToReactComponents} from '@contentful/rich-text-react-renderer' */
