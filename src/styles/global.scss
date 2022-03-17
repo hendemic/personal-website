@@ -1,19 +1,69 @@
-@import './brand.scss';
 
+:root {
+  --brand-base-1: #0f1a23;
+  --brand-base-2: #d2d6d7;
+  --brand-accent: #fa9963;
+  --brand-accent-2: #324d5a;
+  --brand-accent-2-200:  #98A6AC;
+  --brand-font: "inter", Arial, sans-serif;
+  --heading-space: 1.3rem;
+  --text-line-spacing: 1.65rem;
 
-$heading-space: 1.3rem;
-$text-line-spacing: 1.65rem;
+}
 
-html, body {
+@mixin global-body {
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100%;
-  background-color: $bg-color;
-  color: $primary-font-color;
-  font-family: $brand-font;
-
+  font-family: var(--brand-font);
+  background-color: var(--background-color);
+  color: var(--font-color);
+  a {
+    color: var(--link-color);
+  }
 }
+
+/*
+body {
+  @include global-body;
+  background-color: $bg-color-light;
+  color: $primary-font-color-light;
+  font-family: $brand-font;
+  a {
+    color:$link-color-light;
+  }
+}
+
+body.dark {
+  @include global-body;
+  background-color: $bg-color-dark;
+  color: $primary-font-color-dark;
+  font-family: $brand-font;
+  a {
+    color:$link-color-dark;
+  }
+}
+*/
+
+body {
+  @include global-body;
+  --background-color: var(--brand-base-2);
+  --font-color: var(--brand-base-1);
+  --link-color: var(--brand-base-1);
+  --link-hover: var(--brand-accent);
+  --subheading-color: var(--brand-accent-2);
+}
+
+body.dark {
+  @include global-body;
+  --background-color: var(--brand-base-1);
+  --font-color: var(--brand-base-2);
+  --link-color: var(--brand-base-2);
+  --link-hover: var(--brand-accent);
+    --subheading-color: var(--brand-accent-2-200);
+}
+
 
 * {
   box-sizing: border-box;
@@ -23,7 +73,7 @@ html, body {
 
 
 h1,h2,h3,h4 {
-  margin-bottom: $heading-space;
+  margin-bottom: var(--heading-space);
   margin-top: 0;
 }
 
@@ -66,7 +116,7 @@ h3 {
 }
 
 h4 {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h5 {
@@ -75,7 +125,7 @@ h5 {
 }
 
 p {
-    line-height: $text-line-spacing;
+    line-height: var(--text-line-spacing);
 }
 
 
@@ -83,10 +133,6 @@ p {
   font-size: .8rem;
 }
 
-a {
-  color:$link-color;
-}
-
 a:hover {
-  color: $link-hover;
+  color: var(--link-hover);
 }

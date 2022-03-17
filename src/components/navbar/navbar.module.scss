@@ -4,19 +4,90 @@
   float: right;
   margin: 40px 40px;
 
-  div {
+  li {
     float: right;
     margin-left: 30px;
+    list-style-type: none;
   }
 
   a {
-    color: $link-color;
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 1rem;
   }
 
   a:hover {
-    color: $link-hover;
+    color: var(--link-hover);
   }
+
+  ThemeToggler {
+    float: right;
+  }
+
+
 }
+
+/*credit to @ithos for her solution on Medium */
+/*https://medium.com/swlh/explainlikeim5-1-dark-mode-on-css-react-and-gatsby-and-a-beautiful-toggle-40ccbcf01f8c*/
+
+.darkButton {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3px;
+
+    &:before,
+    &:after {
+      box-sizing: border-box;
+    }
+
+    label {
+      position: relative;
+      display: block;
+      width: 45px;
+      height: 25px;
+      border-radius: 100px;
+      background-color: rgb(37, 37, 37);
+      overflow: hidden;
+      cursor: pointer;
+
+      &:before,
+      &:after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        top: 3px;
+        left: 3px;
+        transition: 0.4s ease;
+      }
+
+      &:before {
+        background-color: var(--brand-accent);
+      }
+
+      &:after {
+        background-color: var(--brand-base-1);
+        left: -58px;
+        transform: scale(0.00001);
+      }
+    }
+
+    input[type="checkbox"] {
+      display: none;
+
+      &:checked + label {
+        &:before {
+          background-color: var(--brand-accent-2);
+          transform: translateX(20px);
+        }
+
+        &:after {
+          transform: translateX(75px) scale(1);
+        }
+      }
+    }
+  }

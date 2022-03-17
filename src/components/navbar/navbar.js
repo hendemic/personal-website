@@ -1,6 +1,7 @@
 import React from 'react'
 import * as navStyles from './navbar.module.scss'
 import {graphql, useStaticQuery, Link} from 'gatsby'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 
 export const NavBar = ({ children }) => {
@@ -20,11 +21,29 @@ export const NavBar = ({ children }) => {
 
   return (
     <div className={navStyles.navmenu}>
-      {result.contentfulMenuNav.menuItems.map((menuItem) =>
-        <div key={menuItem.id}>
-          <Link to={"../" + menuItem.page.slug}>{menuItem.label}</Link>
-        </div>
-      )}
+      <ul>
+      <li>
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => (
+            <div className={navStyles.darkButton}>
+              <input
+                type="checkbox"
+                id="toggle"
+                onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                checked={theme === 'dark'}
+              />
+              <label for="toggle"></label>
+            </div>
+          )}
+        </ThemeToggler>
+      </li>
+        {result.contentfulMenuNav.menuItems.map((menuItem) =>
+          <li key={menuItem.id}>
+            <Link to={"../" + menuItem.page.slug}>{menuItem.label}</Link>
+          </li>
+        )}
+
+      </ul>
     </div>
   )
 }
