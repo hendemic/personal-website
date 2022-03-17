@@ -23,6 +23,13 @@
   }
 }
 
+@mixin dark-mode {
+  --background-color: var(--brand-base-1);
+  --font-color: var(--brand-base-2);
+  --link-color: var(--brand-base-2);
+  --link-hover: var(--brand-accent);
+  --subheading-color: var(--brand-accent-2-200);
+}
 
 body {
   @include global-body;
@@ -34,11 +41,8 @@ body {
 }
 
 body.dark{
-  --background-color: var(--brand-base-1);
-  --font-color: var(--brand-base-2);
-  --link-color: var(--brand-base-2);
-  --link-hover: var(--brand-accent);
-    --subheading-color: var(--brand-accent-2-200);
+  @include global-body;
+  @include dark-mode;
 }
 
 
